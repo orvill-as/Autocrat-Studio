@@ -10,11 +10,11 @@
 }
 
 .nav-link {
-  @apply text-[15px] font-normal tracking-wide;
+  @apply text-[15px] font-normal tracking-wide transition-all duration-300;
 }
 
 .gradient-text {
-  @apply bg-gradient-to-r from-[#FF00FF] via-[#9C27B0] to-[#3F51B5] text-transparent bg-clip-text;
+  @apply bg-gradient-to-r from-[#FF00FF] via-[#9C27B0] to-[#3F51B5] text-transparent bg-clip-text animate-gradient;
 }
 
 .border-gradient-moving {
@@ -33,6 +33,23 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  animation: gradient 8s ease infinite;
+  background-size: 200% 200%;
 }
 
 .bg-clip-border {
