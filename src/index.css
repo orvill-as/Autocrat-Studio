@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black font-sans;
+    overflow-x: hidden;
+  }
+}
+
+.nav-link {
+  @apply text-[15px] font-normal tracking-wide;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-[#FF00FF] via-[#9C27B0] to-[#3F51B5] text-transparent bg-clip-text;
+}
+
+.border-gradient-moving {
+  background: linear-gradient(90deg, #FF3BFF, #ECBFBF, #5C24FF, #D94FD5);
+  background-size: 300% 300%;
+  animation: gradientBorder 4s ease infinite;
+}
+
+@keyframes gradientBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-clip-border {
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) padding-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
