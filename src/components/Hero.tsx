@@ -1,4 +1,3 @@
-import React from 'react';
 import DevelopmentVisualization from '../assets/images/Development_visualization.png';
 
 const Hero = () => {
