@@ -1,4 +1,5 @@
 import React from 'react';
+import DevelopmentVisualization from '../assets/images/Development_visualization.png';
 
 const Hero = () => {
   return (
@@ -29,7 +30,7 @@ const Hero = () => {
             <div className="absolute inset-0 rounded-[34px] border-2 border-transparent bg-clip-border border-gradient-moving" />
           </button>
 
-          <button className="group w-full sm:w-auto px-8 sm:px-10 py-3 text-[15px] sm:text-[16px] rounded-[34px] bg-black border-2 border-white text-white h-[46px] sm:h-[50px] transform hover:scale-105 hover:border-white/40 transition-all duration-300 ease-out">
+          <button className="group w-full sm:w-auto px-8 sm:px-10 py-3 text-[15px] sm:text-[16px] rounded-[34px] bg-black border-2 border-white/20 text-white h-[46px] sm:h-[50px] transform hover:scale-105 hover:border-white/40 transition-all duration-300 ease-out">
             <span className="relative z-10 group-hover:bg-gradient-to-r group-hover:from-[#FFFFFF] group-hover:to-[#D94FD5] group-hover:text-transparent group-hover:bg-clip-text">
               Ecosystems
             </span>
@@ -39,7 +40,7 @@ const Hero = () => {
         <div className="mt-12 sm:mt-16 md:mt-20 lg:mt-24 px-4 sm:px-6 lg:px-8">
           <div className="relative rounded-2xl overflow-hidden">
             <img
-              src="https://i.postimg.cc/02vg0P74/123-Z-2101-w020-n001-946-B-p15-1.png"
+              src={DevelopmentVisualization}
               alt="Development Visualization"
               className="w-full h-auto rounded-2xl shadow-2xl"
               loading="lazy"
